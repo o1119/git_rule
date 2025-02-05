@@ -1,7 +1,7 @@
 ## git commit 명령어
-git commit -m “타입 : 제목” ^ (엔터누르기)
--m “” ^ (엔터누르기)
--m “본문 내용 이렇게 씁니다.” (엔터누르기)
+git commit -m “타입: 제목” ^ (엔터누르기)<br>
+-m “” ^ (엔터누르기)<br>
+-m “본문 내용 이렇게 씁니다.” (엔터누르기)<br>
 
 ## git add 취소
 git reset HEAD .
@@ -9,53 +9,30 @@ git reset HEAD .
 ## git commit 취소
 git reset --soft HEAD~1
 
-<p align="center">
-  <img src="https://cdn.inflearn.com/public/files/courses/328008/291d3a74-4c8a-434c-b2e3-73112724da17/328284-1.png" height="150">
-</p>
-
+## Oneteam의 주의사항
+1. main branch는 팀장만 건들 것.
 
 ## Github / [English version read me](https://github.com/DoyoungDev/git-commit/blob/main/EnglishVersion.md)
 
-지금까지 깃허브(github)는 프로젝트 코드나 블로그 글을 작성하는 혼자만의 공간이었습니다.
+## Repository Naming Conventio
 
-그렇다보니 커밋(commit) 메세지에 대한 내용을 신경쓰질 않았는데, <br>
-최근 친구와 함께 일하게 되면서 커밋 메세지 통일에 대한 필요성을 느끼게 되었습니다
+1. 소문자를 사용해라 (use lower case)
+2. 대시(-)를 사용해라 (use dashes)
+3. 명확하게 작성해라 (be specific)
+4. 일관성있게 작성해라 (be consistent)
 
-같이 일할 때 커밋 메세지에 신경을 쓰지 않으니 다음과 같은 문제점이 있었습니다.
-
-  - **서로 무슨 작업을 했는지 한 눈에 보이지 않음.**
-  - **상대방이 작업한 내용을 위해 코드를 반드시 읽어봐야 함.**
-
-사람마다 메세지가 완벽하게 일치할 필요는 없지만, <br>
-통일성 있게 작성하여 메세지만으로 무슨 작업을 진행했는지 확인할 수 있도록 작성하는 것이 중요합니다.
-
-## 1. Importance of Commit Message Rules
-
-커밋 메세지를 작성할 때 규칙이 필요한 이유는 다음과 같습니다.
-
-- 팀원과의 소통
-- 편리한 과거의 기록 추적
-- 이슈(issue) 관리
-
-## 2. Formats for Commit Messages
-
-커밋 메세지를 작성할 때 필요한 내용들을 하나씩 정리해보겠습니다. <br>
-전체적인 포맷은 다음과 같습니다.
-
+## Formats for Commit Messages
 
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/xteMz/btskha3GV9d/jJOTTbW8lzcKExUDpri7EK/img.png" height="250">
 </p>
 
-
-## 2.1. Type
-
+## Type
 해당 커밋은 무엇에 대한 작업인지 키워드를 통해 표시합니다.
 
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/cse5PQ/btskhB1fjW4/gwAcrvaJvIdtkyf3MsB3fK/img.png" height="390">
 <p>
-
   
 ## 2.2 Subject
 커밋 메세지의 제목입니다.
@@ -113,6 +90,21 @@ Feat: 신규 RFID 인식 기능 추가(#123)
 해결: #123
 ```
 
+## git 규칙 만드는 이유
+  - **서로 무슨 작업을 했는지 한 눈에 보이지 않음.**
+  - **상대방이 작업한 내용을 위해 코드를 반드시 읽어봐야 함.**
+
+사람마다 메세지가 완벽하게 일치할 필요는 없지만, <br>
+통일성 있게 작성하여 메세지만으로 무슨 작업을 진행했는지 확인할 수 있도록 작성하는 것이 중요합니다.
+
+## 1. Importance of Commit Message Rules
+
+커밋 메세지를 작성할 때 규칙이 필요한 이유는 다음과 같습니다.
+
+- 팀원과의 소통
+- 편리한 과거의 기록 추적
+- 이슈(issue) 관리
+- 
 ## 결론 
   
 커밋 메세지를 잘 작성하는 것은 협업에서 기본적인 습관입니다.
@@ -135,9 +127,3 @@ Feat: 신규 RFID 인식 기능 추가(#123)
 </p>
 
 
-## Repository Naming Conventio
-
-1. 소문자를 사용해라 (use lower case)
-2. 대시(-)를 사용해라 (use dashes)
-3. 명확하게 작성해라 (be specific)
-4. 일관성있게 작성해라 (be consistent)

@@ -1,3 +1,13 @@
+## git commit 명령어
+git commit -m “타입 : 제목” ^ (엔터누르기)
+-m “” ^ (엔터누르기)
+-m “본문 내용 이렇게 씁니다.” (엔터누르기)
+
+## git add 취소
+git reset HEAD .
+
+## git commit 취소
+git reset --soft HEAD~1
 
 <p align="center">
   <img src="https://cdn.inflearn.com/public/files/courses/328008/291d3a74-4c8a-434c-b2e3-73112724da17/328284-1.png" height="150">

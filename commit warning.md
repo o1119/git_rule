@@ -1,18 +1,43 @@
+# git 명령어 알고싶으면 여기 가서 보시고...
+
+https://github.com/JosephBean/Docs/tree/main/git
+
 ## git commit 명령어
+
 git commit -m “타입: 제목” ^ (엔터누르기)<br>
 -m “” ^ (엔터누르기)<br>
 -m “본문 내용 이렇게 씁니다.” (엔터누르기)<br>
 
+
 ## git add 취소
+
 git reset HEAD .
 
+
 ## git commit 취소
+
 git reset --soft HEAD~1
 
-## Oneteam의 주의사항
-1. main branch는 팀장만 건들 것.
 
-## Github / [English version read me](https://github.com/DoyoungDev/git-commit/blob/main/EnglishVersion.md)
+## Oneteam의 주의사항
+
+1. main branch는 팀장만 건들 것.
+2. pull 잘 활용할 것.
+3. 이슈를 만들어 활용 할 것.
+
+
+## git branch 작명소
+
+- main 배포용(팀장만 만질 수 있음)
+- dev (중간다리)
+- order (창고_발주)
+- stock (창고_재고/입고)
+- comp (창고,제조_인사)
+- biz (창고,제조_거래처관리)
+- quo (제조_견적,수주)
+- transport (제조_운송)
+- prod (제조_재고)
+  
 
 ## Repository Naming Conventio
 
@@ -28,6 +53,7 @@ git reset --soft HEAD~1
 </p>
 
 ## Type
+
 해당 커밋은 무엇에 대한 작업인지 키워드를 통해 표시합니다.
 
 <p align="center">
